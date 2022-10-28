@@ -1,3 +1,13 @@
 .venv/
 .vscode/
 source_code/__pycache__/
+
+output/data/dpca_eigenvec_thickness.npy
+output/data/dpcscr_obs_thickness.npy
+output/data/dpcscr_pri_thickness.npy
+output/data/SA_measure_thickness.npy
+output/model/thickness_eigvec_pri.npy
+output/model/thickness_model_post.npy
+output/model/thickness_pcscr_pri.npy
+output/model/G_d.npy
+output/prediction/GIIP_post.npy
