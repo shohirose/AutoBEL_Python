@@ -7,13 +7,40 @@ This is companion code repository for
 ### Installation
 
 To run the Auto-BEL, the following dependencies must be met:
-* [Jupyter](http://jupyter.org/) 
+* [JupyterLab](http://jupyter.org/) 
 * [Python 3.7](https://www.python.org/) 
-* The above can be installed together via [Anaconda](https://www.anaconda.com/).
+
+The above can be installed using pip. First, create a virtual environment:
+
+```bash
+$ python3 -m venv .venv
+```
+
+Then, activate the environment. On Linux:
+
+```bash
+$ . .venv/bin/activate
+```
+
+On Windows powershell:
+
+```powershell
+> .venv\Scripts\activate.ps1
+```
+
+Finally, install required packages by
+
+```bash
+$ pip install -r requirements.txt
+```
 
 Once installed, jupyter can be started from the command line with
 
-	jupyter notebook
+```bash
+$ jupyter lab
+```
+
+Or you can run JupyterLab using Visual Studio Code.
 	
 ### Structure of the Auto BEL setup
 <img src="source_code/img/dataset_struture.jpg" width="500" height="370">
