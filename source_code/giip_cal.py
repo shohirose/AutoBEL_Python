@@ -29,10 +29,10 @@ def GIIP_cal(m_poro, m_sw, m_thc, grid_h_resolution, plt_flg):
     if plt_flg == True:
         fig, ax1 = plt.subplots(figsize=(7,4.5))
         ax1.hist(GIIP, 24, edgecolor='black', facecolor='aqua')
-        plt.xticks(fontsize = 18, fontname='calibri')    
-        plt.yticks(fontsize = 18, fontname='calibri') 
-        plt.ylabel('count', fontsize = 20, fontname='calibri', weight ='bold')
-        plt.xlabel('GIIP', fontsize = 20, fontname='calibri', weight ='bold')
+        plt.xticks(fontsize = 18)    
+        plt.yticks(fontsize = 18) 
+        plt.ylabel('count', fontsize = 20, weight ='bold')
+        plt.xlabel('GIIP', fontsize = 20, weight ='bold')
         plt.title('Prior GIIP prediction', fontsize=18, loc='left', style='italic')
         ax2 = ax1.twinx()
         kde = stats.gaussian_kde(GIIP)
@@ -59,7 +59,7 @@ def giip_compare(giip_a, giip_b, model_name):
     sns.distplot(giip_b, bins=int(len(giip_b)/12.5), \
                 kde_kws={'linewidth': 3,  "color":"red", }, \
                 hist_kws={'color':'tomato',"edgecolor":'black','linewidth':0.6, 'alpha':0.7})
-    plt.ylabel('Density', fontsize = 20, fontname='calibri')
-    plt.xlabel('GIIP', fontsize = 20, fontname='calibri')
+    plt.ylabel('Density', fontsize = 20)
+    plt.xlabel('GIIP', fontsize = 20)
     plt.title('Posterior and Prior predicton with "' + model_name+ '" model', fontsize=18, loc='right', style='italic')
     return
