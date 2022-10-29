@@ -7,3 +7,4 @@ scikit-learn
 scikit-fmm
 tqdm
 jupyterlab
+scikit-learn-extra
