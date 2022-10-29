@@ -6,35 +6,34 @@ This is companion code repository for
 
 ### Installation
 
-To run the Auto-BEL, the following dependencies must be met:
-* [JupyterLab](http://jupyter.org/) 
-* [Python 3.7](https://www.python.org/) 
+Packages can be installed using pip or conda in the following procedures.
 
-The above can be installed using pip. First, create a virtual environment:
+#### Using pip
+
+On Linux or Mac:
 
 ```bash
 $ python3 -m venv .venv
-```
-
-Then, activate the environment. On Linux:
-
-```bash
 $ . .venv/bin/activate
-```
-
-On Windows powershell:
-
-```powershell
-> .venv\Scripts\activate.ps1
-```
-
-Finally, install required packages by
-
-```bash
 $ pip install -r requirements.txt
 ```
 
-Once installed, jupyter can be started from the command line with
+On Windows:
+
+```powershell
+> python3 -m venv .venv
+> .venv\Scripts\activate.ps1
+> pip install -r requirements.txt
+```
+
+#### Using conda
+
+```bash
+$ conda env create --file autobel.yml
+$ conda activate autobel
+```
+
+Once installed, jupyter can be started from command line with
 
 ```bash
 $ jupyter lab
