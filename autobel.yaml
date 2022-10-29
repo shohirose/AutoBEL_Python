@@ -1,0 +1,15 @@
+name: autobel
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - scikit-learn-extra
+  - scikit-fmm
+  - tqdm
+  - seaborn=0.9.0
+  - jupyterlab
